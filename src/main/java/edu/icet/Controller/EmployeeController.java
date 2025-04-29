@@ -2,6 +2,7 @@ package edu.icet.Controller;
 
 
 import edu.icet.Dto.EmployeeDTO;
+import edu.icet.Dto.EmployeeResponseDTO;
 import edu.icet.Entity.EmployeeEntity;
 import edu.icet.Service.EmployeeService;
 import lombok.RequiredArgsConstructor;
@@ -32,7 +33,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/{id}")
-    public EmployeeEntity getEmployeeById(@PathVariable Integer id) {
+    public EmployeeResponseDTO getEmployeeById(@PathVariable Integer id) {
         return employeeService.getEmployeeById(id);
     }
 

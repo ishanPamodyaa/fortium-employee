@@ -1,6 +1,7 @@
 package edu.icet.Service;
 
 import edu.icet.Dto.EmployeeDTO;
+import edu.icet.Dto.EmployeeResponseDTO;
 import edu.icet.Entity.EmployeeEntity;
 
 import java.util.List;
@@ -13,7 +14,7 @@ public interface EmployeeService {
 
     List<EmployeeEntity> getAllEmployees();
 
-    EmployeeEntity getEmployeeById(Integer id);
+    EmployeeResponseDTO getEmployeeById(Integer id);
 
     void deleteEmployee(Integer id);
 }
